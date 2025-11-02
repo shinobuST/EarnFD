@@ -103,5 +103,5 @@ async def del_admin(user_id: int):
 
 async def full_adminbase():
     user_docs = admin_data.find()
-    user_ids = [int(doc['_id']) async for doc in user_docs]
+    user_ids = [str(doc['_id']) async for doc in user_docs]
     return user_ids
