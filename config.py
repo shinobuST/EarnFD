@@ -61,7 +61,7 @@ https://adrinolinks.in/
 
 # Turn this feature on or off using True or False put value inside  ""
 # TRUE for yes FALSE if no 
-USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "True") == "True" else False 
+USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "Flase") == "Flase" else False 
 # only shareus service known rightnow rest you can test on your own
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "arlinks.in")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "")
@@ -145,4 +145,5 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
+
 
